@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body onload="stampaTabella()"> <!--richiamo la stampa tabella per stampare nella pagina la tabella con gli items iniziali -->
+	<script src="script.js"></script>   <!-- carica lo script -->
+	<div id="tab"> <!-- div che conterrà la tabella creata in js-->
+	
+	</div>
+
+<button type="button" onclick="visualize()">Order Item</button> <!-- bottone per nuovo ordine...on click, visualizza il form per nuovo ordine-->
+
+<div id="divForm" style='display:none'> <!-- div che contiene il form di input di un nuovo item -->
+	<br>
+	<br>
+	<form id="inputForm"> 
+	  Item:<br>
+	  <input type="text" name="Item" value="" id="ItemInput">
+	  <br>
+	  Quantity:<br>
+	  <input type="text" name="Quantity" value="" id="QuantityInput">
+	  <br><br>
+	  <input type="button" value="Place Order" onclick="update()"> <!-- bottone ordina nuovo items...onclick SE nuovo item, lo aggiunge, SE item esistente, aggiorna la quantità-->
+	</form>
+</div>
+</body>
+</html>
