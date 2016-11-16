@@ -10,6 +10,14 @@
 	</div>
 
 <button type="button" onclick="visualize()">Order Item</button> <!-- bottone per nuovo ordine...on click, visualizza il form per nuovo ordine-->
+<br>
+<br>
+<form>
+	 Amount Items Limit:<br>
+	 <input type="text" name="Limit" value="30" id="QuantityLimit">  <!-- limite warehouse -->
+	 <input type="button" value="Set Limit" onclick="setLimit()"> <!-- bootone aggiorna limite...onclick aggiorna il limite con dato preso dal form name="limit" -->
+</form>
+
 
 <div id="divForm" style='display:none'> <!-- div che contiene il form di input di un nuovo item -->
 	<br>
